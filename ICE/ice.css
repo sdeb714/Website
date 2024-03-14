@@ -1,0 +1,190 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color--white: #ffffff;
+  --color--btn: grey;
+}
+
+.first {
+  display: flex;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.second {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.nstu {
+  font-family: Verdana;
+  font-weight: 100;
+  color: white;
+}
+/* .info {
+  display: flex;
+  font-family: Times New Roman;
+  color: white;
+  text-align: center;
+  margin-right: 60px;
+} */
+.info ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: Times New Roman;
+  color: white;
+  text-align: center;
+}
+.info ul li {
+  padding: 15px;
+}
+#nstuimage {
+  width: 10%;
+  height: auto;
+}
+.nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-option {
+  padding: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: max-content;
+}
+
+.nav-item:hover {
+  background-color: var(--color--btn);
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-menu {
+  display: none;
+  background-color: rgb(30, 30, 32);
+  position: absolute;
+}
+
+.level-1 {
+  top: 100%;
+}
+
+.level-2 {
+  right: 100%;
+}
+
+.nav-option:hover > .sub-menu {
+  display: block;
+}
+
+.item-lvl-1::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f107";
+}
+.image-and-notice {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iceimage {
+  height: 450px;
+  width: auto;
+  padding-right: 10px;
+}
+.notice-board {
+  height: 465px;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+.notice-board-top {
+  background-color: grey;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: kalpurush;
+  font-size: 1.2rem;
+}
+
+.notice-board-content {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.notice-item {
+  text-align: center;
+}
+
+.notice-item a:hover {
+  color: red;
+}
+
+.notice-item::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f0a9";
+  margin-right: 5px;
+  color: rgb(24, 22, 22);
+}
+button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn1 {
+  right: 555px;
+  top: 67%;
+}
+.btn2 {
+  left: 25px;
+  top: 67%;
+}
+.copyright-part {
+  background-color: blue;
+  height: 30px;
+  width: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
